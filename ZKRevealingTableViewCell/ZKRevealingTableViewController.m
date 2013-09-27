@@ -85,7 +85,12 @@
 
 - (BOOL)cellShouldReveal:(ZKRevealingTableViewCell *)cell
 {
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	return YES;
+}
+
+- (void)cellDidConceal:(ZKRevealingTableViewCell *)cell {
+    cell.selectionStyle = UITableViewCellSelectionStyleDefault;
 }
 
 - (void)cellDidReveal:(ZKRevealingTableViewCell *)cell
@@ -132,12 +137,14 @@
 	if (!cell) {
 		cell = [[[ZKRevealingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"] autorelease];
 		cell.delegate       = self;
-		cell.selectionStyle = UITableViewCellSelectionStyleNone;
-		
-		cell.backgroundView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+		cell.selectionStyle = UITableViewCellSelectionStyleDefault;
 	}
-	
+    UIView *backView = [[UIView alloc]init];
+    backView.backgroundColor = [UIColor redColor];
+	cell.backgroundView = backView;
+    cell.selectedBackgroundView.backgroundColor = [UIColor yellowColor];
 	cell.textLabel.text = [self.objects objectAtIndex:indexPath.row];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
 	cell.direction      = (ZKRevealingTableViewCellDirection)indexPath.row;
 	cell.shouldBounce   = (BOOL)!indexPath.section;
 	
@@ -149,12 +156,12 @@
 {
 	NSUInteger row = [indexPath row];
 	if (row % 2 == 0) {
-		cell.backgroundColor = [UIColor whiteColor];
+		cell.contentView.backgroundColor = [UIColor whiteColor];
 	} else {
-		cell.backgroundColor = [UIColor colorWithRed:0.892 green:0.893 blue:0.892 alpha:1.0];
+		cell.contentView.backgroundColor = [UIColor colorWithRed:0.892 green:0.893 blue:0.892 alpha:1.0];
 	}
 	
-//	cell.contentView.backgroundColor = cell.backgroundColor;
+//	cell.contentView.backgroundColor = [UIColor greenColor];
 }
 
 @end

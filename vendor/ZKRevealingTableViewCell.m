@@ -347,7 +347,10 @@ static char BOOLRevealing;
                                               [UIView animateWithDuration:0.1 delay:0
                                                                   options:UIViewAnimationOptionCurveEaseIn
                                                                animations:^{ self.viewToReveal.frame = CGRectOffset(self.viewToReveal.frame, -bounceDistance, 0); }
-                                                               completion:NULL];
+                                                               completion:^(BOOL finished) {
+                                                                   if ([self.delegate respondsToSelector:@selector(cellDidConceal:)])
+                                                                   [self.delegate cellDidConceal:self];
+                                                               }];
 										  }
 						  ];
 					 }];

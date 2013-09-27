@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>90D8931B-4E5B-409A-90A6-4604663F2DC1</string>
+	<string>EFF4D05C-9404-4173-A0C6-41BE06E3058A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ZKRevealingTableViewCell</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9DF28F3C-A783-402A-A745-C67DFB46ECF4</key>
-		<string>https://github.com/alexzielenski/ZKRevealingTableViewCell.git</string>
+		<key>DC96A898-58E5-42F8-8139-E5B5DF5205A3</key>
+		<string>https://github.com/inottawa/ZKRevealingTableViewCell.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ZKRevealingTableViewCell.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9DF28F3C-A783-402A-A745-C67DFB46ECF4</key>
+		<key>DC96A898-58E5-42F8-8139-E5B5DF5205A3</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/alexzielenski/ZKRevealingTableViewCell.git</string>
+	<string>https://github.com/inottawa/ZKRevealingTableViewCell.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9DF28F3C-A783-402A-A745-C67DFB46ECF4</string>
+	<string>DC96A898-58E5-42F8-8139-E5B5DF5205A3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9DF28F3C-A783-402A-A745-C67DFB46ECF4</string>
+			<string>DC96A898-58E5-42F8-8139-E5B5DF5205A3</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ZKRevealingTableViewCell</string>
 		</dict>
